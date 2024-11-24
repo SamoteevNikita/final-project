@@ -35,13 +35,19 @@ body {
                 &_language {
                     display: flex;
                     align-items: center;
-                    gap: 6px;
                     &_text {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 33px;
                         font-size: 12px;
                         font-weight: 700;
+                        padding: 5px 7px;
                         line-height: 14.63px;
                         color: #FFFFFF;
                         text-decoration: none;
+                        border-radius: 8px; 
+                        transition: all 0.2s ease;
 
                         &_active {
                             font-size: 12px;
@@ -51,7 +57,7 @@ body {
                             text-decoration: none;
                             background: #F0145A;
                             padding: 5px 7px;
-                            border-radius: 50%; 
+                            border-radius: 8px; 
                         }
                     }
                 }
@@ -90,17 +96,37 @@ body {
                     line-height: 19.5px;
                     color: #FFFFFF;
                     text-decoration: none;
+                    border-bottom: 3px solid transparent;
+                    transition: all 0.2s ease;
 
                     &_active {
+                        padding-bottom: 3px;
                         color: #F0145A;
-                        border-bottom: 1px solid; 
+                        border-bottom: 2px solid; 
+                        text-decoration: none;
                     }
                 }
             }
         }
     }
 }
+.first-block_header_right-menu_upper_facebook-svg:hover {
+    color: #F0145A;
+    transition: all 0.5s ease;
+}
 
+.first-block_header_right-menu_upper_language_text:hover {
+    
+    background-color: #FFFFFF20;
+}
+
+.first-block_header_right-menu_lower {
+    &_text:hover {
+        color: #FFFFFF;
+        border-bottom: solid;   
+
+    }
+}
 .third-block {
     &_height-text {
         padding-left: 160px;
@@ -348,6 +374,10 @@ body {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                
+                &_facebook-icon {
+                    color: #24A3FF;
+                }
     
                 &_dot {
                     width: 6px;
@@ -381,6 +411,15 @@ body {
     }
 }
 
+.footer_block_left-block_lower_facebook-icon:hover {
+    color: #F0145A;
+    transition: all 0.5s ease;
+}
+
+.footer_block_left-block_lower_email:hover {
+    color: #F0145A;
+    transition: all 0.2s ease;
+}
 @media (max-width: 1440px) {
 
     .third-block {
@@ -466,14 +505,20 @@ body {
 
             &_language {
                 display: flex;
-                align-items: center;
-                gap: 6px;
+                align-items: center;    
                 &_text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 33px;
                     font-size: 12px;
                     font-weight: 700;
+                    padding: 5px 7px;
                     line-height: 14.63px;
                     color: #FFFFFF;
                     text-decoration: none;
+                    border-radius: 8px; 
+                    transition: all 0.2s ease;
                 }
                 &_text-active {
                     font-size: 12px;
@@ -483,7 +528,7 @@ body {
                     text-decoration: none;
                     background: #F0145A;
                     padding: 5px 7px;
-                    border-radius: 50%; 
+                    border-radius: 8px; 
                 }
             }
             &_dot {
@@ -607,13 +652,19 @@ body {
             &_language {
                 display: flex;
                 align-items: center;
-                gap: 6px;
                 &_text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 33px;
                     font-size: 12px;
                     font-weight: 700;
+                    padding: 5px 7px;
                     line-height: 14.63px;
-                    text-decoration: none;
                     color: #FFFFFF;
+                    text-decoration: none;
+                    border-radius: 8px; 
+                    transition: all 0.2s ease;
                 }
                 &_text-active {
                     font-size: 12px;
@@ -623,7 +674,7 @@ body {
                     text-decoration: none;
                     background: #F0145A;
                     padding: 5px 7px;
-                    border-radius: 50%;
+                    border-radius: 8px; 
                 }
             }
             &_text-number {
