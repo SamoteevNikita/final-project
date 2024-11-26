@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Cera Pro";
   margin: 0;
@@ -83,6 +82,13 @@ body {
   color: #FFFFFF;
 }
 .first-block_header_right-menu_upper_facebook-svg {
+  color: #FFFFFF;
+}
+.first-block_header_right-menu_upper_number_text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-decoration: none;
   color: #FFFFFF;
 }
 .first-block_header_right-menu_lower {
@@ -183,6 +189,11 @@ body {
   line-height: 46.32px;
   color: #B3B3BA;
   text-decoration: none;
+}
+.second_block_left-menu_text:hover {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .second_block_verical-stick {
   width: 4px;
@@ -355,6 +366,7 @@ body {
   font-size: 0;
 }
 .fifth_block_header_img_component {
+  width: 430px;
   display: block;
   margin: 0;
   padding: 0;
@@ -509,6 +521,9 @@ body {
   font-weight: 700;
   line-height: 19.5px;
   color: #24A3FF;
+}
+.footer_block_left-block_lower_email:hover {
+  text-decoration: underline;
 }
 .footer_block_right-block_text {
   font-size: 16px;
@@ -912,10 +927,10 @@ body {
 @media (max-width: 375px) {
   .first-block_center {
     display: flex;
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center; /* Центрирование по вертикали */
-    height: 100vh; /* 100% высоты экрана */
-    padding: 0 20px; /* Небольшие отступы, чтобы не прилипало к краям */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
     box-sizing: border-box;
   }
   .third-header {
