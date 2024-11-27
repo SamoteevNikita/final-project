@@ -104,6 +104,14 @@ body {
   text-decoration: none;
 }
 
+.first-block_header_right-menu_upper_number_text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .first-block_header_right-menu_upper_facebook-svg:hover {
   color: #F0145A;
   transition: all 0.5s ease;
@@ -203,6 +211,7 @@ body {
   font-size: 0;
 }
 .fifth_block_header_img_component {
+  width: 430px;
   display: block;
   margin: 0;
   padding: 0;
@@ -289,8 +298,9 @@ body {
 }
 
 .footer {
-  padding: 30px 160px;
+  padding: 0 160px;
   background-color: #F5F5FA;
+  padding-top: 30px;
 }
 .footer_horizontal-line {
   display: flex;
@@ -333,6 +343,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 30px;
 }
 .footer_block_left-block_lower_facebook-icon {
   color: #24A3FF;
@@ -355,6 +366,9 @@ body {
   font-weight: 700;
   line-height: 19.5px;
   color: #24A3FF;
+}
+.footer_block_left-block_lower_email:hover {
+  text-decoration: underline;
 }
 .footer_block_right-block_text {
   font-size: 16px;

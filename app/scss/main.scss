@@ -87,6 +87,13 @@ body {
                 &_facebook-svg {
                     color: #FFFFFF;
                 }
+                &_number_text {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 19.5px;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
             }
 
             &_lower {
@@ -162,7 +169,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     &_block {
         display: flex; 
         align-items: center; 
@@ -170,14 +177,14 @@ body {
         justify-content: space-between; 
         gap: 60px;
         padding: 60px 0;
-        
+
         &_left-menu {
             display: flex; 
             flex-direction: column;
             align-items: end;
             gap: 20px;   
             min-width: fit-content;
-            
+
             &_text_active {
                 font-size: 38px;
                 font-weight: 700;
@@ -188,20 +195,28 @@ body {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;     
             }
-    
+
             &_text {
                 font-size: 38px;
                 font-weight: 700;
                 line-height: 46.32px;
                 color: #B3B3BA;
-                text-decoration: none;      
+                text-decoration: none;
+
+                &:hover {
+                    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
         }
+        
         &_verical-stick {
             width: 4px; 
             height: 303px; 
             background: #FFFFFF4D;     
         }
+        
         &_right-menu {
             display: flex;
             max-width: fit-content;
@@ -210,7 +225,7 @@ body {
             max-width: 861px;
             height: 100%;
             padding: 43px 0;
-    
+
             &_upper-text {
                 max-width: 861px;
                 font-size: 30px;
@@ -219,6 +234,7 @@ body {
                 color: #FFFFFF;
                 padding-bottom: 30px;      
             }
+            
             &_lower-text {
                 max-width: 861px;
                 font-size: 19px;
@@ -391,6 +407,7 @@ body {
                 font-size: 0; 
     
                 &_component {
+                    width: 430px;
                     display: block;
                     margin: 0;
                     padding: 0; 
@@ -497,12 +514,10 @@ body {
     padding: 0 160px;
     background-color: #F5F5FA;
     padding-top: 30px;
-    
 
     &_horizontal-line {
         display: flex;
         justify-content: center;
-        
         margin: 0 auto;
         min-height: 2px;
         background: #E6E6F0;
@@ -510,9 +525,8 @@ body {
     &_block {
         display: flex;
         justify-content: space-between;
-        
         padding-top: 30px;
-        
+
         &_left-block {
             &_upper {
                 display: flex;
@@ -567,6 +581,9 @@ body {
                     font-weight: 700;
                     line-height: 19.5px;
                     color: #24A3FF;     
+                    &:hover {
+                        text-decoration: underline; 
+                    }
                 }
             }
         }
@@ -1079,10 +1096,10 @@ body {
     
     .first-block_center {
         display: flex;
-        justify-content: center; /* Центрирование по горизонтали */
-        align-items: center; /* Центрирование по вертикали */
-        height: 100vh; /* 100% высоты экрана */
-        padding: 0 20px; /* Небольшие отступы, чтобы не прилипало к краям */
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        padding: 0 20px; 
         box-sizing: border-box;
     }
     .third-header {
